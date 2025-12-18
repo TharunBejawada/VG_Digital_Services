@@ -11,6 +11,8 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.954.0",
     "@aws-sdk/lib-dynamodb": "^3.954.0",
+    "@heroicons/react": "^2.2.0",
+    "framer-motion": "^12.23.26",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1",
