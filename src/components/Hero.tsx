@@ -30,7 +30,11 @@ const staggerContainer = {
 
 const imageAnimation = {
   hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: { 
+    opacity: 1, 
+    x: 0, 
+    transition: { duration: 0.8, ease: "easeOut" as const } // <-- Add "as const"
+  },
 };
 
 export default function Hero() {

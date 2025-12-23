@@ -17,4 +17,5 @@ export const db = DynamoDBDocumentClient.from(connection, {
 
 // 3. Helper for Table Names (keeps your code clean)
 import { Resource } from "sst";
-export const TableName = Resource.MyTable.name;
+// export const TableName = Resource.MyTable.name;
+export const TableName = "MyTable";

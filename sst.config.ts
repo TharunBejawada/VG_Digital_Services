@@ -4,7 +4,7 @@
 export default $config({
   app(input) {
     return {
-      name: "vg-digital-services-app",
+      name: "vg-app",
       removal: input?.stage === "production" ? "retain" : "remove",
       protect: ["production"].includes(input?.stage),
       home: "aws",
@@ -16,6 +16,11 @@ export default $config({
     };
   },
   async run() {
-    new sst.aws.Nextjs("vg-digital-services-app");
+    new sst.aws.Nextjs("vg-app", {
+      domain: {
+        name: "vgdigitalmarketingagency.com", 
+        redirects: ["www.vgdigitalmarketingagency.com"], 
+      },
+    });
   },
 });

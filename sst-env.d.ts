@@ -5,7 +5,7 @@
 
 declare module "sst" {
   export interface Resource {
-    "vg-digital-services-app": {
+    "vg-app": {
       "type": "sst.aws.Nextjs"
       "url": string
     }

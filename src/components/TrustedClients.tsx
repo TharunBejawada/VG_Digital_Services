@@ -12,15 +12,15 @@ const clients = [
 // Duplicate the list to create the seamless infinite scroll effect
 const marqueeVariants = {
   animate: {
-    x: [0, -1035], // Adjust based on total width of logos
+    x: [0, -1035],
     transition: {
       x: {
         repeat: Infinity,
-        repeatType: "loop",
-        duration: 20, // Speed of the scroll (higher = slower)
+        repeatType: "loop", // TypeScript now knows this is a specific type
+        duration: 20,
         ease: "linear",
       },
-    },
+    } as const, // <--- ADD THIS "as const" HERE
   },
 };
 
