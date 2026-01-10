@@ -40,7 +40,7 @@ export default function Footer() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-10 py-3 text-lg font-bold text-white bg-brand-red rounded-full hover:bg-red-700 transition-colors shadow-lg"
               >
-                +91 98765 43210
+                +91 89788 69101
               </Link>
             </div>
           </div>
@@ -102,19 +102,19 @@ export default function Footer() {
               <ul className="space-y-4 text-gray-400 text-sm">
                 <li className="flex items-start gap-3">
                   <EnvelopeIcon className="h-5 w-5 text-brand-red flex-shrink-0" />
-                  <span>info@vgdigital.com</span>
+                  <span>venugopaldigitalmarketing@gmail.com</span>
                 </li>
-                <li className="flex items-start gap-3">
+                {/* <li className="flex items-start gap-3">
                   <EnvelopeIcon className="h-5 w-5 text-brand-red flex-shrink-0" />
                   <span>sales@vgdigital.com</span>
-                </li>
+                </li> */}
                 <li className="flex items-start gap-3">
                   <PhoneIcon className="h-5 w-5 text-brand-red flex-shrink-0" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 89788 69101</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPinIcon className="h-5 w-5 text-brand-red flex-shrink-0" />
-                  <span>123 Business Park, Tech City, India</span>
+                  <span>Hyderabad, India</span>
                 </li>
               </ul>
             </div>
